@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kaicode
+- Collaborative code editor using monaco, ws and yjs.
+- Uses a custom judge I deployed on EC2, it scales up and down the docker containers(sandboxed code execution) programmatically using docker client in golang, based on the queue 
+- I baked in a deepseek api for ghosted autocompletion - though it is quite slow, but works
+- actually completed, but EC2 had cost anomalies so I have to redeploy
 
-## Getting Started
+# Yuclase
+- Topic wise distributed fault tolerant simple queue service(replication), with possibly my own golang storage engine - or if time is less I'll use some KV store 
+- Using golang
+- I plan to showcase its efficiency and possibly push a docker hub image link to show
 
-First, run the development server:
+# Pristine
+- In C++ using Boost Asio, async-i/o making a reverse proxy and load balancer
+- I plan to showcase its efficiency and possibly push a docker hub image link to show
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# AI based meet app
+- A meet app where live translation/transcribing takes place in realtime
+- Will use nextjs, and slapping webrtc with my own EC2 instance deployed livekit webrtc
+- Live meeting summary, that keeps changing, or keeps context whenever someone new joins in
+- Deploying the same way as kaicode
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Godot Game
+- A simple 2.5/2D multiplayer, like mo.co, or brawl stars, dota, very simple for android and PC
+- deploy my server again on that EC2 or lightsail instance
+- I'll try my best to push to playstore
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Touring app
+- An app where you get tips when you scan or record audio, and translate it to your native language - offline first, using some native AI models on android
+- You can also click photos, and it will create a presentation of your trips on the google maps API or so 
+- I'll try my best to push to playstore# redirector
